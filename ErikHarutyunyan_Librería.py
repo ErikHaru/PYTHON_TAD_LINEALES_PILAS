@@ -358,33 +358,3 @@ while(True):
         exit (0) 
     
 # ********************** MAIN ****** FIN ********************************************
-
-
-class pilaLibros: # FUNCION DE COPILOT
-    def __init__(self):
-        self.libros = []
-
-    def apilar(self, libro):
-        self.libros.append(libro)
-
-    def desapilar(self):
-        if self.libros:
-            return self.libros.pop()
-        else:
-            print("No se encuentran libros en esta pila")
-            return None
-
-    def ver_tope(self):
-        if self.libros:
-            return self.libros[-1]
-        else:
-            print("No se encuentran libros en esta pila")
-            return None
-
-    def esta_vacia(self):
-        return len(self.libros) == 0
-
-    def __repr__(self):
-        return f"PilaDeLibros({self.libros})"
-
-
